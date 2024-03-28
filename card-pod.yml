@@ -1,13 +1,19 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: card-app-pod
-  labels:
-    name: card-app-pod
-    app: card-demo-app
 spec:
-  containers:
-    - name: card-app
-      image: tusharshiledarelite1991/card
-      ports:
-      - containerPort: 80
+  replicas: 1
+  selector:
+    matchLabels:
+      app: card-app-pod
+  template:
+    metadata:
+      labels:
+        app: card-app-pod
+    spec:
+      containers:
+        - name: card-app
+          image: tusharshiledarelite1991/card
+          ports:
+            - containerPort: 8080
