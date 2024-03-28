@@ -7,7 +7,7 @@
       app: card-demo-app
   spec:
     containers:
-      name: card-app
-      image: tusharshiledarelite1991/card
-      ports:
-        containerPort: "80"
+      - name: card-app
+        image: tusharshiledarelite1991/card
+        ports:
+        - containerPort: 80
