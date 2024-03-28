@@ -10,4 +10,4 @@
       name: account-app
       image: tusharshiledarelite1991/account
       ports:
-        containerPort: 80
+        containerPort: "80"
