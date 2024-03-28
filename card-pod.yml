@@ -1,0 +1,13 @@
+  apiVersion: v1
+  kind: Pod
+  metadata:
+    name: card-app-pod
+    labels:
+      name: card-app-pod
+      app: card-demo-app
+  spec:
+    containers:
+      name: card-app
+      image: tusharshiledarelite1991/card
+      ports:
+        containerPort: 80
