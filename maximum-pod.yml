@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: loanapplication
 spec:
-  replicas: 500
+  replicas: 200
   selector:
     matchLabels:
       app: loan
