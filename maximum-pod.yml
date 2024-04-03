@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example-deployment
+  name: loanapplication
 spec:
-  replicas: 2
+  replicas: 500
   selector:
     matchLabels:
-      app: example
+      app: loan
   template:
     metadata:
       labels:
-        app: example
+        app: loan
     spec:
       containers:
-        - name: loanapplicationContainer
+        - name: loanapplicationcontainer
           image: tusharshiledarelite1991/loanapplication
           ports:
             - containerPort: 8090
