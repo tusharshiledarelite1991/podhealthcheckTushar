@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: account-service
+  name: pod-healthcheck-demo-app
   labels:
-    name: account-service
+    name: pod-healthcheck-demo-app
     app: pod-healthcheck-demo-app
 spec:
   selector:

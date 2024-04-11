@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    name: account-app-pod
+    name: pod-healthcheck-demo-app
 spec:
-    replicas: 1
+    replicas: 3
     selector:
       matchLabels:
-        app: account-app-pod
+        app: pod-healthcheck-demo-app
     template:
       metadata:
         labels:
-          app: account-app-pod
+          app: pod-healthcheck-demo-app
       spec:
         containers:
-          - name: card-app
+          - name: pod-healthcheck-demo-app
             image: tusharshiledarelite1991/card
             ports:
               - containerPort: 8080
