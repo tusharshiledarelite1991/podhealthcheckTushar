@@ -6,6 +6,7 @@ metadata:
     name: pod-healthcheck-demo-app
     app: pod-healthcheck-demo-app
 spec:
+  type: LoadBalancer
   selector:
     app: account-app-pod
   ports:
