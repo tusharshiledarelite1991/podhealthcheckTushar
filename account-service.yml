@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: card-service
+  name: account-service
   labels:
     name: account-service
     app: pod-healthcheck-demo-app
