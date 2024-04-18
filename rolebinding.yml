@@ -9,5 +9,5 @@ subjects:
     namespace: default
 roleRef:
   kind: Role
-  name: service-reader
+  name: service-reader-1
   apiGroup: rbac.authorization.k8s.io
