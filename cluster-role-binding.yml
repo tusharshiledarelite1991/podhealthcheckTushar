@@ -1,4 +1,4 @@
-apiVersion: rbac.authorization.k8s.io/v1">rbac.authorization.k8s.io/v1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
  name: service-reader-binding
