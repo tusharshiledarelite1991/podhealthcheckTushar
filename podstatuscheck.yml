@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: pod-status-check
+spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: pod-status-check
+    template:
+      metadata:
+        labels:
+          app: pod-status-check
+      spec:
+        containers:
+          - name: pod-status-check
+            image: abhro/actuators:latest
+            ports:
+              - containerPort: 8080
