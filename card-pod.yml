@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: card-app-pod
+      app: card-service
   template:
     metadata:
       labels:
-        app: card-app-pod
+        app: card-service
     spec:
       containers:
-        - name: card-app
+        - name: card-service
           image: tusharshiledarelite1991/card
           ports:
             - containerPort: 8080
