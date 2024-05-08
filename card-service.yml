@@ -16,22 +16,6 @@ spec:
 
 
 
-      apiVersion: v1
-      kind: Service
-      metadata:
-        name: pod-healthcheck-demo-app
-        labels:
-          name: pod-healthcheck-demo-app
-          app: pod-healthcheck-demo-app
-      spec:
-        type: LoadBalancer
-        selector:
-          app: account-app-pod
-        ports:
-          - protocol: TCP
-            port: 80
-            targetPort: 80
-
 
 
 
