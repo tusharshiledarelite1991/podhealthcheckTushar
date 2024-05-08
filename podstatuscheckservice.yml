@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pod-status-check
+  labels:
+    name: pod-status-check
+    app: pod-status-check
+spec:
+  type: LoadBalancer
+  selector:
+    app: pod-status-check
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
