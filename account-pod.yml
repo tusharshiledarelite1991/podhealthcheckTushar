@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
     name: pod-healthcheck-demo-app
 spec:
-    replicas: 1
+    replicas: 10
     selector:
       matchLabels:
         app: pod-healthcheck-demo-app
